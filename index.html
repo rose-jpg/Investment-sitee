@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#190C26",
+              secondary: "#F0E9E1",
+              dimWhite: "#999999",
+            },
+          },
+        },
+        screens: {
+          xs: "480px",
+          ss: "620px",
+          sm: "768px",
+          md: "1060px",
+          lg: "1200px",
+          xl: "1700px",
+        },
+      }
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/aa19735a18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <nav
+        class="sm:hidden flex justify-between items-center h-[60px] bg-secondary px-4"
+      >
+        <h4 class="text-primary text-[30px] font-extrabold">LOGO</h4>
+        <div class="px-3 py-2 bg-primary">
+          <img class="w-[20px] h-[20px]" src="menu.svg" alt="" />
+        </div>
+      </nav>
+      <nav>
+        <ul
+          class="hidden sm:flex bg-black justify-center items-center gap-8 p-3 text-white font-bold"
+        >
+          <li>HOME</li>
+          <li>ABOUT US</li>
+          <li>SERVICES</li>
+          <li>CONTACT US</li>
+        </ul>
+      </nav>
+    </div>
+    <div id="hero">
+      <div class="flex flex-col items-center px-4">
+        <div class="flex flex-col">
+          <h1 class="text-[27px] font-bold leading-[40px] uppercase mt-14">
+            The Trading platform of the furture
+          </h1>
+          <p class="text-primary leading-[30px] tracking-[2px] my-8">
+            Trade forex, synthetics, stocks & indices, cryptocurrencies and
+            commodities. We are an award winning forex and commodities broker,
+            providing trading services and facilities to both retail and
+            institutional clients.
+          </p>
+          <div class="flex flex-col gap-8 my-5">
+            <button
+              class="w-[100%] h-[50px] border-[1px] border-primary text-primary text-[14px]"
+            >
+              <i class="fa-solid fa-user"></i> SIGN IN
+            </button>
+            <button class="w-[100%] h-[50px] bg-primary text-white text-[14px]">
+              <i class="fa-solid fa-user-plus"></i> REGISTER
+            </button>
+          </div>
+          <div class="flex flex-row items-center mt-2">
+            <img src="client.png" alt="" />
+            <div class="flex flex-col items-start ml-8">
+              <h5 class="font-extrabold text-[20px]">64,739</h5>
+              <p>Happy Customers</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-1 my-20">
+          <img src="hand-mocup.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="px-4">
+      <h4 class="text-[30px] font-bold text-center mt-20">
+        Trusted by 1600+ of the world's most popular companies
+      </h4>
+      <div class="sliderr">
+        <div class="slide-track">
+          <div class="slidee">
+            <img src="coinbase.png" alt="" />
+          </div>
+          <div class="slidee">
+            <img src="dropbox.png" alt="" />
+          </div>
+          <div class="slidee">
+            <img src="binance.png" alt="" />
+          </div>
+
+          <div class="slidee">
+            <img src="coinbase.png" alt="" />
+          </div>
+          <div class="slidee">
+            <img src="coinbase.png" alt="" />
+          </div>
+          <div class="slidee">
+            <img src="dropbox.png" alt="" />
+          </div>
+          <div class="slidee">
+            <img src="binance.png" alt="" />
+          </div>
+
+          <div class="slidee">
+            <img src="coinbase.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="about-us"
+      class="px-4 bg-primary py-5 flex justify-center items-center flex-col text-white"
+    >
+      <h5 class="text-center my-3">| About TrustFX</h5>
+      <p class="text-center">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+        dolorem, eius, nobis impedit ab voluptatibus sint fugiat soluta labore
+        aliquid nulla nesciunt, libero cupiditate unde totam quod facilis quidem
+        nihil?
+      </p>
+      <img class="my-3" src="down.svg" alt="" />
+    </div>
+    <div id="hero">
+      <div class="flex flex-col items-center px-4">
+        <div class="relative">
+          <img class="flex-1" src="one.png" alt="" />
+        </div>
+        <div class="flex flex-col">
+          <h1 class="text-[27px] font-bold leading-[40px] uppercase mt-10">
+            Invest In NFT's the Smart Way
+          </h1>
+          <p class="text-primary leading-[30px] tracking-[2px] my-5">
+            The world’s Leading and largest digital marketplace for crypto
+            collectibles and non-fungible tokens (NFTs). Buy, sell, and discover
+            exclusive digital items. Trade NFT's the quick and easy way, choose
+            from the rearest and most valuable projects, there has never been a
+            better time to start trading NFT's than now
+          </p>
+          <div class="flex flex-col gap-3 mt-3">
+            <button
+              class="w-[100%] h-[45px] border-[1px] border-primary text-primary text-[14px]"
+            >
+              <i class="fa-solid fa-user"></i> SIGN IN
+            </button>
+            <button class="w-[100%] h-[45px] bg-primary text-white text-[14px]">
+              <i class="fa-solid fa-user-plus"></i> REGISTER
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col px-4">
+        <div id="get started" class="flex flex-col gap-3 my-20">
+          <h5 class="my-2">| How TrustFX Works</h5>
+          <h1 class="font-bold">Get Started with just a few clicks</h1>
+          <p>
+            Become a better investor on the go. Join a new generation of crypto
+            investors. Easy interface to create an account.
+          </p>
+          <div class="flex flex-row items-center gap-3">
+            <div
+              class="w-[50px] h-[50px] flex justify-center items-center bg-[#323f5b] rounded-[14px]"
+            >
+              <p class="font-extrabold text-white">1</p>
+            </div>
+            <div class="flex flex-col">
+              <p class="font-extrabold text-[16px]">Register</p>
+              <p class="w-[270px] text-[14px]">
+                Create an account within seconds.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-row items-center gap-3">
+            <div
+              class="w-[50px] h-[50px] flex justify-center items-center bg-[#323f5b] rounded-[14px]"
+            >
+              <p class="font-extrabold text-white">2</p>
+            </div>
+            <div class="flex flex-col">
+              <p class="font-extrabold text-[16px]">
+                Verify Identity and make Deposit
+              </p>
+              <p class="w-[270px] text-[14px]">
+                Verify your identity and choose your preferred deposit method.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-row items-center gap-3">
+            <div
+              class="w-[50px] h-[50px] flex justify-center items-center bg-[#323f5b] rounded-[14px]"
+            >
+              <p class="font-extrabold text-white">3</p>
+            </div>
+            <div class="flex flex-col">
+              <p class="font-extrabold text-[16px]">Start trading</p>
+              <p class="w-[270px] text-[14px]">
+                You are all set to start trading.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-1">
+          <img src="mocup2.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="bg-black mt-20 px-4">
+      <h4 class="my-5 text-white text-[24px] text-center font-extrabold py-8">
+        WE ARE ALL OVER THE WORLD STAY CONNECTED
+      </h4>
+      <div class="w-[100%] h-[550px] relative">
+        <img
+          class="absolute w-[100%] h-[100%] object-cover"
+          src="map.png"
+          alt=""
+        />
+        <div
+          class="absolute bottom-0 right-0 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]"
+        >
+          <img
+            class="w-[100%] h-[100%] rounded-full object-cover"
+            src="member1.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="absolute top-0 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]"
+        >
+          <img
+            class="w-[100%] h-[100%] rounded-full object-cover"
+            src="member1.jpg"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]"
+        >
+          <img
+            class="w-[100%] h-[100%] rounded-full object-cover"
+            src="member1.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="absolute top-[35%] left-[15%] sm:w-[200px] sm:h-[150px] w-[100px] h-[50px] p-[6px] sm:rounded-[24px] rounded-[10px] bg-[#5d6680]"
+        >
+          <img class="w-[100%] h-[100%] sm:rounded-[24px] rounded-[10px]
+          object-cover src="bg.jpg" alt="" />
+        </div>
+        <div
+          class="absolute top-[15%] right-[15%] sm:w-[200px] sm:h-[150px] w-[100px] h-[50px] p-[6px] sm:rounded-[24px] rounded-[10px] bg-[#5d6680]"
+        >
+          <img
+            class="w-[100%] h-[100%] sm:rounded-[24px] rounded-[10px] object-cover"
+            src="bg.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <section id="tranding">
+      <div class="container">
+        <h1 class="text-[30px] font-extrabold text-center">TESTIMONIAL</h1>
+      </div>
+      <div class="container">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="2.png" alt="Tranding" />
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">$20</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">Special Pizza</h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="2.png" alt="Tranding" />
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">$20</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">Meat Ball</h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="2.png" alt="Tranding" />
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">$40</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">Burger</h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="2.png" alt="Tranding" />
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">$15</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">Frish Curry</h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="2.png" alt="Tranding" />
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">$15</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">Pane Cake</h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="2.png" alt="Tranding" />
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">$20</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">Vanilla cake</h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="2.png" alt="Tranding" />
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">$8</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">Straw Cake</h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+          </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
