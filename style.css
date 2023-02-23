@@ -409,15 +409,5 @@ hr {
   .nav-menu.activee {
     left: 0;
   }
-  .nav-items {
-    border-bottom: 1px solid #ffff;
-    width: 100%;
-  }
-  .nav-itemss {
-    border-bottom: 1px solid #ffff;
-    border-top: 1px solid #ffff;
-
-    width: 100%;
-    padding-top: 20px;
-  }
+  
 }
