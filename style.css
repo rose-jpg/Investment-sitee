@@ -372,13 +372,7 @@ hr {
   border-color: gray;
 }
 
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-  z-index: 99;
-}
 
 .nav-link {
   transition: 0.3s ease-out;
@@ -408,7 +402,7 @@ hr {
     background-color: #1d0e3e;
     gap: 10px;
     width: 100%;
-    height:200px;
+    height:180px;
     text-align: center;
     transition: 0.3s;
   }
