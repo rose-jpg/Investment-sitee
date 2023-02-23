@@ -323,11 +323,7 @@ gap: 30px;
   }
   
   
-  .accordion {
-    width: 90%;
-    max-width: 1000px;
-    margin: 2rem auto;
-  }
+
   .accordion-item {
    
     color: #ffff;
@@ -362,7 +358,7 @@ gap: 30px;
   .accordion-item-body-content {
     padding: 1rem;
     line-height: 1.5rem;
-    border-top: 3px solid;
+    border-top: 1px solid;
     border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
   }
   
@@ -370,4 +366,28 @@ gap: 30px;
   box-shadow: 0px 5px 20px 2px #1d0e3e2f;
   z-index: 999;
   background-color: #1D0E3E;
+  
+}
+.bg{
+  background: url('bg.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.bo{
+width: 0;
+height: 0;
+border: 150px solid transparent;
+
+border-top-color:#1D0E3E ;
+border-left-color:transparent;
+border-right-color:transparent ;
+position: absolute;
+bottom: -150px;
+
+}
+hr{
+border-color: gray;
+
+
 }

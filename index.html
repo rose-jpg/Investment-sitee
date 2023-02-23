@@ -44,16 +44,20 @@
   <body>
     <div>
       <nav
-        class="sm:hidden flex justify-between items-center h-[60px] fixed w-[100%]  box px-4"
+        class="sm:hidden flex justify-between items-center h-[60px] fixed w-[100%] box px-4"
       >
         <h4 class="text-white text-[30px] font-extrabold">LOGO</h4>
         <div class="px-3 py-2 bg-primary">
           <img class="w-[20px] h-[20px]" src="menu.svg" alt="" />
         </div>
       </nav>
-      <nav>
+      <nav
+        class="hidden sm:flex justify-between bg-primary px-4 sm:px-20 py-5 fixed w-[100%]"
+      >
+        <h4 class="text-white text-[30px] font-extrabold">LOGO</h4>
+
         <ul
-          class="hidden sm:flex bg-black justify-center items-center gap-8 p-3 text-white font-bold"
+          class="flex justify-center items-center gap-8 p-3 text-white font-bold"
         >
           <li>HOME</li>
           <li>ABOUT US</li>
@@ -63,18 +67,26 @@
       </nav>
     </div>
     <div id="hero">
-      <div class="flex flex-col items-center px-4 ">
-        <div class="flex flex-col">
-          <h1 class="text-[27px] font-bold leading-[40px] uppercase mt-[100px]">
-            The Trading platform of the furture
+      <div
+        class="flex flex-col sm:flex-row items-center sm:items-start px-4 sm:px-20 sm:pt-[80px]"
+      >
+        <div class="flex flex-col flex-1">
+          <h1
+            class="text-[27px] sm:text-[45px] font-bold leading-[40px] sm:leading-[60px] uppercase mt-[100px]"
+          >
+            The Trading <br class="hidden sm:block" />
+            platform of the <br class="hidden sm:block" />
+            furture
           </h1>
-          <p class="text-primary leading-[30px] tracking-[2px] my-8">
+          <p
+            class="text-primary leading-[30px] tracking-[2px] my-8 sm:w-[550px]"
+          >
             Trade forex, synthetics, stocks & indices, cryptocurrencies and
             commodities. We are an award winning forex and commodities broker,
             providing trading services and facilities to both retail and
             institutional clients.
           </p>
-          <div class="flex flex-col gap-8 my-5">
+          <div class="flex flex-col sm:flex-row sm:w-[400px] gap-8 my-5">
             <button
               class="w-[100%] h-[50px] border-[1px] border-primary text-primary text-[14px]"
             >
@@ -84,7 +96,9 @@
               <i class="fa-solid fa-user-plus"></i> REGISTER
             </button>
           </div>
-          <div class="flex flex-row justify-center items-center mt-2">
+          <div
+            class="flex flex-row justify-center sm:justify-start items-center mt-s sm:mt-4"
+          >
             <img src="client.png" alt="" />
             <div class="flex flex-col items-start ml-8">
               <h5 class="font-extrabold text-[20px]">64,739</h5>
@@ -92,13 +106,13 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-1 my-20">
+        <div class="flex flex-1 sm:justify-end my-20">
           <img src="hand-mocup.png" alt="" />
         </div>
       </div>
     </div>
-    <div class="px-4">
-      <h4 class="text-[30px] font-bold text-center mt-20">
+    <div class="px-4 bg-secondary py-5 sm:px-20">
+      <h4 class="text-[20px] font-extrabold text-center mt-20">
         Trusted by 1600+ of the world's most popular companies
       </h4>
       <div class="sliderr">
@@ -134,10 +148,19 @@
     </div>
     <div
       id="about-us"
-      class="px-4 bg-primary py-5 flex justify-center items-center flex-col text-white"
+      class="px-4 bg-primary py-5 flex justify-center items-center flex-col text-white sm:px-[200px]"
     >
       <h5 class="text-center my-3">| About TrustFX</h5>
       <p class="text-center">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+        dolorem, eius, nobis impedit ab voluptatibus sint fugiat soluta labore
+        aliquid nulla nesciunt, libero cupiditate unde totam quod facilis quidem
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+        dolorem, eius, nobis impedit ab voluptatibus sint fugiat soluta labore
+        aliquid nulla nesciunt, libero cupiditate unde totam quod facilis quidem
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+        dolorem, eius, nobis impedit ab voluptatibus sint fugiat soluta labore
+        aliquid nulla nesciunt, libero cupiditate unde totam quod facilis quidem
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
         dolorem, eius, nobis impedit ab voluptatibus sint fugiat soluta labore
         aliquid nulla nesciunt, libero cupiditate unde totam quod facilis quidem
@@ -153,107 +176,160 @@
           AFFORDABLE <span class="text-primary">PACKAGE</span>
         </h1>
         <p class="text-center text-dimWhite text-[15px] mt-4 px-4">
-          PURCHASE BITCOIN USING A CREDIT CARD OR WITH YOUR LINKED BANK
-          ACCOUNT
+          PURCHASE BITCOIN USING A CREDIT CARD OR WITH YOUR LINKED BANK ACCOUNT
         </p>
       </div>
-      <div class="flex flex-col px-4 bg-primary mx-4 pb-4 pt-12 gap-8">
-        <div class="flex flex-col justify-center items-center">
-          <h4 class="text-[18px] text-white font-bold tracking-[2px]">
-            PREMIUM PLAN
-          </h4>
-          <p class="text-[18px] text-white font-bold tracking-[2px]">10%</p>
-        </div>
-        <div class="flex flex-col justify-center items-center">
-          <h4 class="text-[18px] text-white font-bold tracking-[2px]">
-            MINIMUM
-          </h4>
-          <p class="text-[18px] text-white font-bold tracking-[2px]">$5000</p>
-        </div>
+      <div
+        class="flex flex-col sm:flex-row px-4 sm:justify-center items-center sm:gap-5"
+      >
+        <div
+          class="flex flex-col px-4 sm:px-12 sm:pt-14 bg-primary my-8 pb-4 sm:pb-10 pt-12 gap-12 w-[100%] sm:w-[250px]"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <h4 class="text-[18px] text-white font-bold tracking-[2px]">
+              PREMIUM PLAN
+            </h4>
+            <p class="text-[18px] text-white font-bold tracking-[2px]">10%</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <h4 class="text-[18px] text-white font-bold tracking-[2px]">
+              MINIMUM
+            </h4>
+            <p class="text-[18px] text-white font-bold tracking-[2px]">$5000</p>
+          </div>
 
-        <div class="flex flex-col justify-center items-center">
-          <h4 class="text-[18px] text-white font-bold tracking-[2px]">
-            MAXIMUM
-          </h4>
-          <p class="text-[18px] text-white font-bold tracking-[2px]">
-            $10000
-          </p>
+          <div class="flex flex-col justify-center items-center">
+            <h4 class="text-[18px] text-white font-bold tracking-[2px]">
+              MAXIMUM
+            </h4>
+            <p class="text-[18px] text-white font-bold tracking-[2px]">
+              $10000
+            </p>
+          </div>
+          <button class="w-[100%] bg-white h-[40px] text-primary-6">
+            ORDER NOW
+          </button>
         </div>
-        <button class="w-[100%] bg-white h-[40px] text-primary-6">
-          ORDER NOW
-        </button>
-      </div>
-      <div class="flex flex-col px-4 bg-primary mx-4 pb-4 pt-12 my-4 gap-8">
-        <div class="flex flex-col justify-center items-center">
-          <h4 class="text-[18px] text-white font-bold tracking-[2px]">
-            PREMIUM PLAN
-          </h4>
-          <p class="text-[18px] text-white font-bold tracking-[2px]">10%</p>
-        </div>
-        <div class="flex flex-col justify-center items-center">
-          <h4 class="text-[18px] text-white font-bold tracking-[2px]">
-            MINIMUM
-          </h4>
-          <p class="text-[18px] text-white font-bold tracking-[2px]">$5000</p>
-        </div>
+        <div
+          class="flex flex-col px-4 sm:px-12 sm:pt-14 bg-primary my-8 pb-4 sm:pb-10 pt-12 gap-12 w-[100%] sm:w-[250px]"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <h4 class="text-[18px] text-white font-bold tracking-[2px]">
+              PREMIUM PLAN
+            </h4>
+            <p class="text-[18px] text-white font-bold tracking-[2px]">10%</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <h4 class="text-[18px] text-white font-bold tracking-[2px]">
+              MINIMUM
+            </h4>
+            <p class="text-[18px] text-white font-bold tracking-[2px]">$5000</p>
+          </div>
 
-        <div class="flex flex-col justify-center items-center">
-          <h4 class="text-[18px] text-white font-bold tracking-[2px]">
-            MAXIMUM
-          </h4>
-          <p class="text-[18px] text-white font-bold tracking-[2px]">
-            $10000
-          </p>
+          <div class="flex flex-col justify-center items-center">
+            <h4 class="text-[18px] text-white font-bold tracking-[2px]">
+              MAXIMUM
+            </h4>
+            <p class="text-[18px] text-white font-bold tracking-[2px]">
+              $10000
+            </p>
+          </div>
+          <button class="w-[100%] bg-white h-[40px] text-primary-6">
+            ORDER NOW
+          </button>
         </div>
-        <button class="w-[100%] bg-white h-[40px] text-primary t-6">
-          ORDER NOW
-        </button>
-      </div>
-      <div class="flex flex-col px-4 bg-primary mx-4 pb-4 pt-12 gap-8">
-        <div class="flex flex-col justify-center items-center">
-          <h4 class="text-[18px] text-white font-bold tracking-[2px]">
-            PREMIUM PLAN
-          </h4>
-          <p class="text-[18px] text-white font-bold tracking-[2px]">10%</p>
-        </div>
-        <div class="flex flex-col justify-center items-center">
-          <h4 class="text-[18px] text-white font-bold tracking-[2px]">
-            MINIMUM
-          </h4>
-          <p class="text-[18px] text-white font-bold tracking-[2px]">$5000</p>
-        </div>
+        <div
+          class="flex flex-col px-4 sm:px-12 sm:pt-14 bg-primary my-8 pb-4 sm:pb-10 pt-12 gap-12 w-[100%] sm:w-[250px]"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <h4 class="text-[18px] text-white font-bold tracking-[2px]">
+              PREMIUM PLAN
+            </h4>
+            <p class="text-[18px] text-white font-bold tracking-[2px]">10%</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <h4 class="text-[18px] text-white font-bold tracking-[2px]">
+              MINIMUM
+            </h4>
+            <p class="text-[18px] text-white font-bold tracking-[2px]">$5000</p>
+          </div>
 
-        <div class="flex flex-col justify-center items-center">
-          <h4 class="text-[18px] text-white font-bold tracking-[2px]">
-            MAXIMUM
-          </h4>
-          <p class="text-[18px] text-white font-bold tracking-[2px]">
-            $10000
-          </p>
+          <div class="flex flex-col justify-center items-center">
+            <h4 class="text-[18px] text-white font-bold tracking-[2px]">
+              MAXIMUM
+            </h4>
+            <p class="text-[18px] text-white font-bold tracking-[2px]">
+              $10000
+            </p>
+          </div>
+          <button class="w-[100%] bg-white h-[40px] text-primary-6">
+            ORDER NOW
+          </button>
         </div>
-        <button class="w-[100%] bg-white h-[40px] text-primary-6">
-          ORDER NOW
-        </button>
+        <div
+          class="flex flex-col px-4 sm:px-12 sm:pt-14 bg-primary my-8 pb-4 sm:pb-10 pt-12 gap-12 w-[100%] sm:w-[250px]"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <h4 class="text-[18px] text-white font-bold tracking-[2px]">
+              PREMIUM PLAN
+            </h4>
+            <p class="text-[18px] text-white font-bold tracking-[2px]">10%</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <h4 class="text-[18px] text-white font-bold tracking-[2px]">
+              MINIMUM
+            </h4>
+            <p class="text-[18px] text-white font-bold tracking-[2px]">$5000</p>
+          </div>
+
+          <div class="flex flex-col justify-center items-center">
+            <h4 class="text-[18px] text-white font-bold tracking-[2px]">
+              MAXIMUM
+            </h4>
+            <p class="text-[18px] text-white font-bold tracking-[2px]">
+              $10000
+            </p>
+          </div>
+          <button class="w-[100%] bg-white h-[40px] text-primary-6">
+            ORDER NOW
+          </button>
+        </div>
       </div>
     </div>
-    <div id="hero">
-      <div class="flex flex-col items-center px-4">
-        <div class="relative">
-          <img class="flex-1" src="one.png" alt="" />
+    <div id="NFT">
+      <div
+        class="flex flex-col sm:flex-row sm:justify-between items-center px-4 sm:gap-[200px] sm:pl-[100px] sm:px-20"
+      >
+        <div class="hidden sm:block">
+          <div class="w-[400px] flex justify-start">
+            <div class="h-[500px]">
+              <img
+                class="w-[100%] h-[100%] object-cover"
+                src="one.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
+
         <div class="flex flex-col">
-          <h1 class="text-[27px] font-bold leading-[40px] uppercase mt-10">
-            Invest In NFT's the Smart Way
+          <h1
+            class="text-[27px] sm:text-[45px] font-bold leading-[40px] uppercase mt-10 sm:leading-[60px]"
+          >
+            Invest In NFT's <br class="hidden sm:block" />
+            the Smart Way
           </h1>
-          
-          <p class="text-primary leading-[30px] tracking-[2px] my-5">
+
+          <p
+            class="text-primary leading-[30px] tracking-[2px] my-5 sm:w-[600px]"
+          >
             The world’s Leading and largest digital marketplace for crypto
             collectibles and non-fungible tokens (NFTs). Buy, sell, and discover
             exclusive digital items. Trade NFT's the quick and easy way, choose
             from the rearest and most valuable projects, there has never been a
             better time to start trading NFT's than now
           </p>
-          <div class="flex flex-col gap-3 mt-3">
+          <div class="flex flex-col sm:flex-row gap-3 mt-3 sm:w-[400px]">
             <button
               class="w-[100%] h-[45px] border-[1px] border-primary text-primary text-[14px]"
             >
@@ -265,57 +341,65 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col px-4">
-        <div id="get started" class="flex flex-col gap-3 my-20">
+      <div
+        class="flex flex-col sm:flex-row items-center px-4 sm:px-48 sm:mt-20"
+      >
+        <div id="get started" class="flex flex-col flex-1 gap-3 my-20">
           <h5 class="my-2">| How TrustFX Works</h5>
-          <h1 class="font-bold">Get Started with just a few clicks</h1>
-          <p>
+          <h1 class="font-bold sm:text-[30px]">
+            Get Started with just a few clicks
+          </h1>
+          <p class="sm:w-[400px] sm:mb-5">
             Become a better investor on the go. Join a new generation of crypto
             investors. Easy interface to create an account.
           </p>
-          <div class="flex flex-row items-center gap-3">
-            <div
-              class="w-[50px] h-[50px] flex justify-center items-center bg-[#323f5b] rounded-[14px]"
-            >
-              <p class="font-extrabold text-white">1</p>
+          <div class="sm:flex flex-col sm:gap-8">
+            <div class="flex flex-row items-center gap-3">
+              <div
+                class="w-[50px] h-[50px] flex justify-center items-center bg-[#323f5b] rounded-[14px]"
+              >
+                <p class="font-extrabold text-white">1</p>
+              </div>
+              <div class="flex flex-col">
+                <p class="font-extrabold text-[16px] sm:text-[20px]">
+                  Register
+                </p>
+                <p class="w-[270px] text-[14px]">
+                  Create an account within seconds.
+                </p>
+              </div>
             </div>
-            <div class="flex flex-col">
-              <p class="font-extrabold text-[16px]">Register</p>
-              <p class="w-[270px] text-[14px]">
-                Create an account within seconds.
-              </p>
+            <div class="flex flex-row items-center gap-3">
+              <div
+                class="w-[50px] h-[50px] flex justify-center items-center bg-[#323f5b] rounded-[14px]"
+              >
+                <p class="font-extrabold text-white">2</p>
+              </div>
+              <div class="flex flex-col">
+                <p class="font-extrabold text-[16px] sm:text-[20px]">
+                  Verify Identity and make Deposit
+                </p>
+                <p class="w-[270px] text-[14px]">
+                  Verify your identity and choose your preferred deposit method.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="flex flex-row items-center gap-3">
-            <div
-              class="w-[50px] h-[50px] flex justify-center items-center bg-[#323f5b] rounded-[14px]"
-            >
-              <p class="font-extrabold text-white">2</p>
-            </div>
-            <div class="flex flex-col">
-              <p class="font-extrabold text-[16px]">
-                Verify Identity and make Deposit
-              </p>
-              <p class="w-[270px] text-[14px]">
-                Verify your identity and choose your preferred deposit method.
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-row items-center gap-3">
-            <div
-              class="w-[50px] h-[50px] flex justify-center items-center bg-[#323f5b] rounded-[14px]"
-            >
-              <p class="font-extrabold text-white">3</p>
-            </div>
-            <div class="flex flex-col">
-              <p class="font-extrabold text-[16px]">Start trading</p>
-              <p class="w-[270px] text-[14px]">
-                You are all set to start trading.
-              </p>
+            <div class="flex flex-row items-center gap-3">
+              <div
+                class="w-[50px] h-[50px] flex justify-center items-center bg-[#323f5b] rounded-[14px]"
+              >
+                <p class="font-extrabold text-white">3</p>
+              </div>
+              <div class="flex flex-col">
+                <p class="font-extrabold text-[16px]">Start trading</p>
+                <p class="w-[270px] text-[14px]">
+                  You are all set to start trading.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="flex flex-1">
+        <div class="flex sm:justify-end flex-1">
           <img src="mocup2.png" alt="" />
         </div>
       </div>
@@ -375,258 +459,173 @@
         </div>
       </div>
     </div>
-    <section id="tranding">
-      <div class="container">
-        
-        <h1
-        class="text-[45px] text-primary font-bold text-center leading-[50px]"
-      >
-      TESTIMONIAL
-      </h1>
-      </div>
-      <div class="container">
-        <div class="swiper tranding-slider">
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="2.png" alt="Tranding" />
-              </div>
-              <div class="tranding-slide-content pt-10 px-8">
-                <div>
-                  <div class="flex flex-row items-center">
-                    <img
-                      class="w-[70px] h-[70px] rounded-full"
-                      src="people-01.png"
-                      alt=""
-                    />
-                    <div class="ml-5">
-                      <h5 class="font-extrabold">John Doe</h5>
-                      <p>USA</p>
-                    </div>
-                  </div>
-                  <div class="pt-20">
-                    <h4 class="font-extrabold">Very satisfied</h4>
-                    <p class=" mt-3">
-                      MetatraderOptions has created an investment strategy that
-                      is completely unique and it has been very successful in
-                      the last few years. I've invested in their services and
-                      saw a positive return on my investments."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="2.png" alt="Tranding" />
-              </div>
-              <div class="tranding-slide-content pt-10 px-8">
-                <div>
-                  <div class="flex flex-row items-center">
-                    <img
-                      class="w-[70px] h-[70px] rounded-full"
-                      src="people-01.png"
-                      alt=""
-                    />
-                    <div class="ml-5">
-                      <h5 class="font-extrabold">John Doe</h5>
-                      <p>USA</p>
-                    </div>
-                  </div>
-                  <div class="pt-20">
-                    <h4 class="font-extrabold">Very satisfied</h4>
-                    <p class=" mt-3">
-                      MetatraderOptions has created an investment strategy that
-                      is completely unique and it has been very successful in
-                      the last few years. I've invested in their services and
-                      saw a positive return on my investments."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="2.png" alt="Tranding" />
-              </div>
-              <div class="tranding-slide-content pt-10 px-8">
-                <div>
-                  <div class="flex flex-row items-center">
-                    <img
-                      class="w-[70px] h-[70px] rounded-full"
-                      src="people-01.png"
-                      alt=""
-                    />
-                    <div class="ml-5">
-                      <h5 class="font-extrabold">John Doe</h5>
-                      <p>USA</p>
-                    </div>
-                  </div>
-                  <div class="pt-20">
-                    <h4 class="font-extrabold">Very satisfied</h4>
-                    <p class=" mt-3">
-                      MetatraderOptions has created an investment strategy that
-                      is completely unique and it has been very successful in
-                      the last few years. I've invested in their services and
-                      saw a positive return on my investments."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="2.png" alt="Tranding" />
-              </div>
-              <div class="tranding-slide-content pt-10 px-8">
-                <div>
-                  <div class="flex flex-row items-center">
-                    <img
-                      class="w-[70px] h-[70px] rounded-full"
-                      src="people-01.png"
-                      alt=""
-                    />
-                    <div class="ml-5">
-                      <h5 class="font-extrabold">John Doe</h5>
-                      <p>USA</p>
-                    </div>
-                  </div>
-                  <div class="pt-20">
-                    <h4 class="font-extrabold">Very satisfied</h4>
-                    <p class=" mt-3">
-                      MetatraderOptions has created an investment strategy that
-                      is completely unique and it has been very successful in
-                      the last few years. I've invested in their services and
-                      saw a positive return on my investments."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="2.png" alt="Tranding" />
-              </div>
-              <div class="tranding-slide-content pt-10 px-8">
-                <div>
-                  <div class="flex flex-row items-center">
-                    <img
-                      class="w-[70px] h-[70px] rounded-full"
-                      src="people-01.png"
-                      alt=""
-                    />
-                    <div class="ml-5">
-                      <h5 class="font-extrabold">John Doe</h5>
-                      <p>USA</p>
-                    </div>
-                  </div>
-                  <div class="pt-20">
-                    <h4 class="font-extrabold">Very satisfied</h4>
-                    <p class=" mt-3">
-                      MetatraderOptions has created an investment strategy that
-                      is completely unique and it has been very successful in
-                      the last few years. I've invested in their services and
-                      saw a positive return on my investments."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="2.png" alt="Tranding" />
-              </div>
-              <div class="tranding-slide-content pt-10 px-8">
-                <div>
-                  <div class="flex flex-row items-center">
-                    <img
-                      class="w-[70px] h-[70px] rounded-full"
-                      src="people-01.png"
-                      alt=""
-                    />
-                    <div class="ml-5">
-                      <h5 class="font-extrabold">John Doe</h5>
-                      <p>USA</p>
-                    </div>
-                  </div>
-                  <div class="pt-20">
-                    <h4 class="font-extrabold">Very satisfied</h4>
-                    <p class=" mt-3">
-                      MetatraderOptions has created an investment strategy that
-                      is completely unique and it has been very successful in
-                      the last few years. I've invested in their services and
-                      saw a positive return on my investments."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            
-          </div>
 
-          <div class="tranding-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
+    <div class="bg-primary py-8">
+      <div id="accordion">
+        <div
+          class="flex flex-col sm:flex-row sm:justify-between items-start px-4 sm:px-20"
+        >
+          <div class="flex flex-col flex-1 text-white">
+            <h1 class="text-[24px] font-extrabold">
+              FREQUENTLY ASKED QUESTIONS
+            </h1>
+            <p class="">
+              Frequently asked questions about our Trading Plarform.
+            </p>
+          </div>
+          <div class="flex flex-col flex-1">
+            <div class="accordion-item">
+              <div class="accordion-item-header">How do I make Profits?</div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content leading-[30px]">
+                  MetatraderOptions provides a variety of advanced tools for
+                  both trading and cloud cryptocurrency mining thereby
+                  guaranteeing maximum profitability for all your investments.
+                </div>
+              </div>
             </div>
-            <div class="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
+            <div class="accordion-item">
+              <div class="accordion-item-header">Are my funds Protected?</div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content leading-[30px]">
+                  Your funds are a priority and we have put I several measure to
+                  ensure that all funds are insured and protected, we have also
+                  put anti-theft, anti-fraud and anti-money laundry systems in
+                  place to ensure the a safe trading & investment platform.
+                </div>
+              </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">How do I deposit?</div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content leading-[30px]">
+                  We offer a variety of deposit options. Please register to see
+                  all available methods.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        
-      </div>
-    </section>
-    <h1 class="text-[24px] text-center font-extrabold">FREQUENTLY ASKED QUESTIONS</h1>
-  
-<div class="bg-primary py-8">
-<div class="accordion">
-  <div class="accordion-item">
-    <div class="accordion-item-header">
-      How do I make Profits?
-    </div>
-    <div class="accordion-item-body">
-      <div class="accordion-item-body-content leading-[30px]">
-        MetatraderOptions provides a variety of advanced tools for both trading and cloud cryptocurrency mining thereby guaranteeing maximum profitability for all your investments.
       </div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <div class="accordion-item-header">
-      Are my funds Protected?
+    <div
+      class="h-[400px] flex justify-center items-center flex-col leading-[60px] bg"
+    >
+      <h1 class="text-[30px] text-white font-extrabold">
+        GET STARTED TODAY WITH BITCOIN
+      </h1>
+      <p class="text-white">
+        Open account for free and start trading Bitcoins!
+      </p>
+      <button
+        class="w-[200px] font-bold h-[50px] flex justify-center items-center bg-primary text-white"
+      >
+        GET STARTED
+      </button>
     </div>
-    <div class="accordion-item-body">
-      <div class="accordion-item-body-content leading-[30px]">
-        Your funds are a priority and we have put I several measure to ensure that all funds are insured and protected, we have also put anti-theft, anti-fraud and anti-money laundry systems in place to ensure the a safe trading & investment platform.
+    <div
+      id="footer"
+      class="bg-primary pt-48 pb-20 px-20 flex flex-row gap-[100px]"
+    >
+      <div class="flex flex-row gap-[100px]">
+        <div>
+          <h4 class="text-white font-bold mb-8">OUR COMPANY</h4>
+          <ul class="text-[#d9d9d9] flex flex-col gap-5">
+            <li>HOME</li>
+            <li>ABOUT US</li>
+            <li>SERVICES</li>
+            <li>CONTACT US</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-8">OUR COMPANY</h4>
+          <ul class="text-[#d9d9d9] flex flex-col gap-5">
+            <li>HOME</li>
+            <li>ABOUT US</li>
+            <li>SERVICES</li>
+            <li>CONTACT US</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-8">OUR COMPANY</h4>
+          <ul class="text-[#d9d9d9] flex flex-col gap-5">
+            <li>HOME</li>
+            <li>ABOUT US</li>
+            <li>SERVICES</li>
+            <li>CONTACT US</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <div class="w-[500px] flex flex-wrap">
+          <div class="mr-[170px]">
+            <h4 class="text-[25px] text-bold text-white">$198.76B</h4>
+            <p class="text-[10px] text-[#d9d9d9]">MARKET CAP</p>
+          </div>
+          <div>
+            <h4 class="text-[25px] text-bold text-white">$198.76B</h4>
+            <p class="text-[10px] text-[#d9d9d9]">MARKET CAP</p>
+          </div>
+          <div class="mr-[170px] mt-[10px]">
+            <h4 class="text-[25px] text-bold text-white">$198.76B</h4>
+            <p class="text-[10px] text-[#d9d9d9]">MARKET CAP</p>
+          </div>
+          <div class="mt-[10px]">
+            <h4 class="text-[25px] text-bold text-white">$198.76B</h4>
+            <p class="text-[10px] text-[#d9d9d9]">MARKET CAP</p>
+          </div>
+        </div>
+        <h5 class="mt-5 text-[#d9d9d9] font-bold">
+          <hr class="my-8" />
+          SUPPORTED PAYMENT METHODS
+        </h5>
+        <div class="flex flex-row gap-3 mt-8">
+          <div class="w-[35px] h-[20px]">
+            <img
+              class="w-[100%] h-[100%] object-cover rounded-[2px]"
+              src="american-express.png"
+              alt=""
+            />
+          </div>
+          <div class="w-[35px] h-[20px]">
+            <img
+              class="w-[100%] h-[100%] object-cover rounded-[2px]"
+              src="mastercard.png"
+              alt=""
+            />
+          </div>
+          <div class="w-[35px] h-[20px]">
+            <img
+              class="w-[100%] h-[100%] object-cover rounded-[2px]"
+              src="visa.png"
+              alt=""
+            />
+          </div>
+          <div class="w-[35px] h-[20px]">
+            <img
+              class="w-[100%] h-[100%] object-cover rounded-[2px]"
+              src="paypal.png"
+              alt=""
+            />
+          </div>
+          <div class="w-[35px] h-[20px]">
+            <img
+              class="w-[100%] h-[100%] object-cover rounded-[2px]"
+              src="maestro.png"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <div class="accordion-item-header">
-      How do I deposit?
-    </div>
-    <div class="accordion-item-body">
-      <div class="accordion-item-body-content leading-[30px]">
-        We offer a variety of deposit options. Please register to see all available methods.
+    <div>
+      <div class="bg-primary px-20 py-10">
+        <hr />
+        <p class="text-center text-white pt-2">
+          Copyright © 2023 TRUST FX All Rights Reserved |
+        </p>
       </div>
     </div>
-  </div>
-  </div>
- 
-
-</div>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
