@@ -511,10 +511,10 @@
     <div
       class="h-[400px] flex justify-center items-center flex-col leading-[60px] bg"
     >
-      <h1 class="text-[30px] text-white font-extrabold">
+      <h1 class=" text-[20px] sm:text-[30px] text-white font-extrabold">
         GET STARTED TODAY WITH BITCOIN
       </h1>
-      <p class="text-white">
+      <p class="text-white text-[14px]">
         Open account for free and start trading Bitcoins!
       </p>
       <button
@@ -525,25 +525,37 @@
     </div>
     <div
       id="footer"
-      class="bg-primary pt-48 pb-20 px-20 flex flex-row gap-[100px]"
+      class="bg-primary pt-[70px] sm:pb-20 pb-12 px-4 sm:px-20 flex flex-col sm:flex-row sm:gap-[100px] gap-[50px]"
     >
-      <div class="flex flex-row gap-[100px]">
+      <div class="flex flex-col sm:flex-row sm:gap-[100px] gap-[50px]">
         <div>
           <h4 class="text-white font-bold mb-8">OUR COMPANY</h4>
           <ul class="text-[#d9d9d9] flex flex-col gap-5">
-            <li>HOME</li>
-            <li>ABOUT US</li>
-            <li>SERVICES</li>
-            <li>CONTACT US</li>
+            <div class="flex flex-row sm:flex-col gap-[100px] sm:gap-0">
+              <div class="flex flex-col gap-1 sm:gap-5">
+                <li>HOME</li>
+                <li>ABOUT US</li>
+              </div>
+              <div class="flex flex-col gap-1 sm:gap-5">
+                <li>SERVICES</li>
+                <li>CONTACT US</li>
+              </div>
+            </div>
           </ul>
         </div>
         <div>
           <h4 class="text-white font-bold mb-8">OUR COMPANY</h4>
           <ul class="text-[#d9d9d9] flex flex-col gap-5">
-            <li>HOME</li>
-            <li>ABOUT US</li>
-            <li>SERVICES</li>
-            <li>CONTACT US</li>
+            <div class="flex flex-row sm:flex-col gap-[100px] sm:gap-0">
+              <div class="flex flex-col gap-1 sm:gap-5">
+                <li>HOME</li>
+                <li>ABOUT US</li>
+              </div>
+              <div class="flex flex-col gap-1 sm:gap-5">
+                <li>SERVICES</li>
+                <li>CONTACT US</li>
+              </div>
+            </div>
           </ul>
         </div>
         <div>
@@ -557,8 +569,8 @@
         </div>
       </div>
       <div class="flex flex-col">
-        <div class="w-[500px] flex flex-wrap">
-          <div class="mr-[170px]">
+        <div class="sm:w-[500px] w-[350px] flex flex-wrap">
+          <div class="sm:mr-[170px] mr-[100px]">
             <h4 class="text-[25px] text-bold text-white">$198.76B</h4>
             <p class="text-[10px] text-[#d9d9d9]">MARKET CAP</p>
           </div>
@@ -566,7 +578,7 @@
             <h4 class="text-[25px] text-bold text-white">$198.76B</h4>
             <p class="text-[10px] text-[#d9d9d9]">MARKET CAP</p>
           </div>
-          <div class="mr-[170px] mt-[10px]">
+          <div class="sm:mr-[170px] mr-[100px] mt-[10px]">
             <h4 class="text-[25px] text-bold text-white">$198.76B</h4>
             <p class="text-[10px] text-[#d9d9d9]">MARKET CAP</p>
           </div>
@@ -575,11 +587,9 @@
             <p class="text-[10px] text-[#d9d9d9]">MARKET CAP</p>
           </div>
         </div>
-        <h5 class="mt-5 text-[#d9d9d9] font-bold">
-          <hr class="my-8" />
-          SUPPORTED PAYMENT METHODS
-        </h5>
-        <div class="flex flex-row gap-3 mt-8">
+       <h4 class="text-[#d9d9d9] mt-5 text-center sm:text-start">SUPPORTED PAYMENT METHODS</h4>
+       <hr class="sm:mt-8"/>
+        <div class="flex justify-center sm:justify-start flex-row gap-3 mt-8">
           <div class="w-[35px] h-[20px]">
             <img
               class="w-[100%] h-[100%] object-cover rounded-[2px]"
@@ -617,16 +627,18 @@
           </div>
         </div>
       </div>
+      
     </div>
     <div>
-      <div class="bg-primary px-20 py-10">
+      <div class="bg-primary px-20 sm:py-10 mt-[-8px]">
         <hr />
-        <p class="text-center text-white pt-2">
+        <p class="text-center text-white text-[12px] sm:text-[14px] pt-5 sm:pt-20">
           Copyright © 2023 TRUST FX All Rights Reserved |
         </p>
       </div>
     </div>
 
+    
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
