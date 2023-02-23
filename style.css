@@ -389,6 +389,9 @@ hr {
   display: none;
   cursor: pointer;
 }
+.hi {
+  display: none;
+}
 
 @media (max-width: 480px) {
   .hamburger {

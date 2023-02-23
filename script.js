@@ -47,7 +47,7 @@ const hamburger = document.querySelector(".hamburger")
 const navMenu = document.querySelector(".nav-menu")
 
 hamburger.addEventListener("click", () => {
-  console.log("yfyfjfu")
+
   hamburger.classList.toggle("activee")
   navMenu.classList.toggle("activee")
 })
@@ -58,3 +58,8 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     navMenu.classList.remove("activee")
   })
 )
+window.addEventListener("scroll", function () {
+  document.getElementById("nv").classList.toggle("hi", scrollY > 0)
+  hamburger.classList.remove("activee")
+  navMenu.classList.remove("activee")
+})
