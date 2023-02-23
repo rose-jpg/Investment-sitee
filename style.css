@@ -372,7 +372,10 @@ hr {
   border-color: gray;
 }
 
-
+.nav-menu{
+  display: flex;
+  flex-direction: column;
+}
 
 .nav-link {
   transition: 0.3s ease-out;
@@ -397,8 +400,7 @@ hr {
     top: 70px;
     color: #ffff;
     font-weight: 900;
-    display: flex;
-    flex-direction: column;
+
     background-color: #1d0e3e;
     gap: 10px;
     width: 100%;
