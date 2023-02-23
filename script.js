@@ -1,5 +1,5 @@
 var TrandingSlider = new Swiper('.tranding-slider', {
-    effect: 'coverf low',
+    effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
     loop: true,
@@ -43,3 +43,18 @@ accordionItemHeaders.forEach(accordionItemHeader => {
     
   });
 });
+const hamburger = document.querySelector(".hamburger")
+const navMenu = document.querySelector(".nav-menu")
+
+hamburger.addEventListener("click", () => {
+  console.log("yfyfjfu")
+  hamburger.classList.toggle("activee")
+  navMenu.classList.toggle("activee")
+})
+
+document.querySelectorAll(".nav-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("activee")
+    navMenu.classList.remove("activee")
+  })
+)
