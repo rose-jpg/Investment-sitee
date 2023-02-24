@@ -403,3 +403,13 @@ hr {
   }
   
 }
+input{border-left: 1px solid #000;;
+  outline: none;
+  background-color: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+input[type=submit]{
+  background-color: red;
+}
