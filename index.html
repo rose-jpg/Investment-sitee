@@ -67,10 +67,10 @@
           
             <li class="sm:hidden nav-item" id="close">X</li>
        
-          <li class="nav-items">HOME</li>
-          <li class="nav-items">ABOUT US</li>
-          <li class="nav-items">SERVICES</li>
-          <li class="nav-items">CONTACT US</li>
+          <li class="nav-items"><a href="#hero">HOME</a></li>
+          <li class="nav-items"><a href="#about-us">ABOUT US</a></li>
+          <li class="nav-items"><a href="#services">SERVICES</a></li>
+          <li class="nav-items"><a href="#contact-us">CONTACT US</a></li>
         </ul>
       </nav>
     </div>
@@ -98,12 +98,12 @@
             <button
               class="w-[100%] h-[50px] border-[1px] border-primary text-primary text-[14px]"
             >
-              <i class="fa-solid fa-user"></i> <a href="login.html">SIGN IN</a>
+              <i class="fa-solid fa-user"></i> <a href="Login.html">SIGN IN</a>
             </button>
            <button
                 class="w-[100%] h-[50px] bg-primary text-white text-[14px]"
               >
-                <i class="fa-solid fa-user-plus"></i>  <a href="/Signup.html"
+                <i class="fa-solid fa-user-plus"></i>  <a href="/Register.html"
                 >REGISTER</a>
               </button>
           </div>
@@ -175,11 +175,12 @@
         </div>
       </div>
     </div>
+    <div id="about-us">
     <div
-      id="about-us"
-      class="px-4 bg-primary py-5 flex justify-center items-center flex-col text-white sm:px-[200px]"
+    
+      class="px-4 bg-primary py-20 flex justify-center items-center flex-col text-white sm:px-[200px]"
     >
-      <h5 class="text-center my-3">| About TrustFX</h5>
+      <h5 class="text-center my-5">| About TrustFX</h5>
       <p class="text-center">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
         dolorem, eius, nobis impedit ab voluptatibus sint fugiat soluta labore
@@ -197,7 +198,8 @@
       </p>
       <img class="my-3" src="down.svg" alt="" />
     </div>
-    <div id="affordable " class="my-20">
+   </div>
+    <div id="services" class="my-20">
       <div class="mb-24">
         <h1
           class="text-[45px] text-primary font-bold text-center leading-[50px]"
@@ -322,13 +324,16 @@
           </p>
           <div class="flex flex-col sm:flex-row gap-3 mt-3 sm:w-[400px]">
             <button
-              class="w-[100%] h-[45px] border-[1px] border-primary text-primary text-[14px]"
+            class="w-[100%] h-[50px] border-[1px] border-primary text-primary text-[14px]"
+          >
+            <i class="fa-solid fa-user"></i> <a href="Login.html">SIGN IN</a>
+          </button>
+         <button
+              class="w-[100%] h-[50px] bg-primary text-white text-[14px]"
             >
-              <i class="fa-solid fa-user"></i> SIGN IN
-            </button>
-            <button class="w-[100%] h-[45px] bg-primary text-white text-[14px]">
-              <i class="fa-solid fa-user-plus"></i> REGISTER
-            </button>
+              <i class="fa-solid fa-user-plus"></i>  <a href="/Register.html"
+              >REGISTER</a>
+            </button>0
           </div>
         </div>
       </div>
@@ -713,11 +718,11 @@
         </div>
       </div>
     </div>
-    <div
+    <div id="contact-us"
       class="h-[400px] flex justify-center items-center flex-col leading-[60px] bg"
     >
       <h1 class="text-[20px] sm:text-[30px] text-white font-extrabold">
-        GET STARTED TODAY WITH BITCOIN
+GET STARTED TODAY WITH BITCOIN
       </h1>
       <p class="text-white text-[14px]">
         Open account for free and start trading Bitcoins!
@@ -725,7 +730,7 @@
       <button
         class="w-[200px] font-bold h-[50px] flex justify-center items-center bg-primary text-white"
       >
-        GET STARTED
+      <a href="/Register.html"> GET STARTED</a>
       </button>
     </div>
     <div
@@ -738,12 +743,12 @@
           <ul class="text-[#d9d9d9] flex flex-col gap-5">
             <div class="flex flex-row sm:flex-col gap-[100px] sm:gap-0">
               <div class="flex flex-col gap-1 sm:gap-5">
-                <li>HOME</li>
-                <li>ABOUT US</li>
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#about-us">ABOUT US</a></li>
               </div>
               <div class="flex flex-col gap-1 sm:gap-5">
-                <li>SERVICES</li>
-                <li>CONTACT US</li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact-us">CONTACT US</a></li>
               </div>
             </div>
           </ul>

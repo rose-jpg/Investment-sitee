@@ -11,6 +11,9 @@
   );
   filter: blur(125px);
 }
+html {
+  scroll-behavior: smooth;
+}
 .slider {
   width: 100%;
   height: 100vh;
