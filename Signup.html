@@ -1,38 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="signup.css">
-  <title>Register</title>
-</head>
-<body>
-    <section>
-        <div class="form-box">
-            <div class="form-value">
-                <form action="">
-                    <h2>Login</h2>
-                    <div class="inputbox">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required>
-                        <label for="">Email</label>
-                    </div>
-                    <div class="inputbox">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" required>
-                        <label for="">Password</label>
-                    </div>
-                    <div class="forget">
-                        <label for=""><input type="checkbox">Remember Me  <a href="#">Forget Password</a></label>
-                      
-                    </div>
-                    <button>Log in</button>
-                    <div class="register">
-                        <p>Don't have a account <a href="#">Register</a></p>
-                    </div>
-                </form>
-            </div>
+  <head>
+    <title>Login | </title>
+    <link rel="stylesheet" href="signup.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1D0E3E",
+              secondary: "#F0E9E1",
+              dimWhite: "#999999",
+            },
+          },
+        },
+        screens: {
+          xs: "480px",
+          ss: "620px",
+          sm: "768px",
+          md: "1060px",
+          lg: "1200px",
+          xl: "1700px",
+        },
+      }
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sm:mt-20">
+    <div class="flex justify-center items-center flex-col  ">
+      <div class="bg-white w-[480px] px-10 rounded-[4px] py-8">
+        <div class="">
+          <h2 class="text-[22px] font-bold text-primary">Login into Account</h2>
+          <p class="text-gray-400 text-[14px] pb-5 pt-2">
+            Sign in into your account using your email and passcode.
+          </p>
         </div>
-    </section>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+        <form>
+          <div>
+            <div class="">
+              <label class="" for="username"
+                >Email Address <span class="text-red-500">*</span></label
+              >
+              <div class="">
+                <input
+                  name="email"
+                  type="email"
+                  autocomplete="new-email"
+                  class="input"
+                  id="username"
+                  placeholder="Enter your email address"
+                  autocomplete="off"
+                  data-msg-email="Enter a valid email."
+                  data-msg-required="Required."
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="my-5">
+            <div class="">
+              <label class="" for="username"
+                >Password <span class="text-red-500">*</span></label
+              >
+            </div>
+            <div class="">
+              <input
+                name="password"
+                cl
+                type="email"
+                autocomplete="new-password"
+                class="input"
+                id="username"
+                placeholder="Enter your passcode"
+                autocomplete="off"
+                data-msg-minlength="At least 6 chars."
+                data-msg-required="Required."
+                required
+              />
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <div class="">
+              <input
+                type="checkbox"
+                class=""
+                name="remember"
+                id="remember-me"
+              />
+              <label class="text-gray-400 ml-2" for="remember-me"
+                >Remember Me</label
+              >
+            </div>
+            <h5 class="text-primary text-[14px] font-bold">
+              <a href="">Forgot Code?</a>
+            </h5>
+          </div>
+          <div class="my-8">
+            <button
+              type="submit"
+              name="submit"
+              class="w-[100%] bg-primary p-3 rounded-[5px] text-white"
+            >
+              Login
+            </button>
+          </div>
+          <div class="text-center">
+            New on our platform?
+            <a href="register"><strong>Create an account</strong></a>
+          </div>
+        </form>
+      </div>
+
+  
+    </div>
+    <hr class="mt-6">
+    <div class="flex justify-between px-20 pt-1">
+        <h5 class="text-[#34495e]">MetatraderOptions © 2022. All Rights Reserved.</h5>
+        <div class="flex gap-5 text-[#34495e] font-bold">
+            <h5><a href="">Reurn to homepage</a></h5>
+            <h5><a href=""></a>Privacy policy</h5>
+        </div>
+    </div>
+</div>
+  </body>
 </html>
