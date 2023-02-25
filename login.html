@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Login | </title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Login.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -25,29 +27,28 @@
         },
       }
     </script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <title>Document</title>
   </head>
   <body>
-    <div class="sm:mt-20">
-    <div class="flex justify-center items-center flex-col  ">
-      <div class="bg-white sm:w-[480px]  px-10 rounded-[4px] py-8">
-        <div class="">
-          <h2 class="text-[22px] font-bold text-primary">Login into Account</h2>
-          <p class="text-gray-400 text-[14px] pb-5 pt-2">
-            Sign in into your account using your email and passcode.
+    <div class="sm:flex justify-center items-center flex-col">
+      <div
+        class="bg-white sm:w-[480px] rounded-[4px] mx-4 mt-32  sm:px-10 px-5 py-5 sm:py-8 px-2"
+      >
+        <div>
+          <h2 class="text-[20px] sm:text-[22px] font-bold text-primary">
+            Login into Account
+          </h2>
+          <p class="text-gray-400 text-[12px] sm:text-[14px] pb-5 pt-2">
+            Sign into your account using your email and passcode.
           </p>
         </div>
-        <form>
+        <form
+          action="
+      "
+        >
           <div>
-            <div class="">
-              <label class="" for="username"
+            <div class="mt-1">
+              <label class="text-[14px] sm:font-bold" for="full-name"
                 >Email Address <span class="text-red-500">*</span></label
               >
               <div class="">
@@ -66,12 +67,10 @@
               </div>
             </div>
           </div>
-          <div class="my-5">
-            <div class="">
-              <label class="" for="username"
-                >Password <span class="text-red-500">*</span></label
-              >
-            </div>
+          <div class="mt-5">
+            <label class="text-[14px] sm:font-bold" for="user-name"
+              >Password <span class="text-red-500">*</span></label
+            >
             <div class="">
               <input
                 name="password"
@@ -87,8 +86,9 @@
                 required
               />
             </div>
+       
           </div>
-          <div class="flex justify-between">
+          <div class="flex justify-between mt-2">
             <div class="">
               <input
                 type="checkbox"
@@ -104,7 +104,7 @@
               <a href="">Forgot Code?</a>
             </h5>
           </div>
-          <div class="my-8">
+          <div class="my-5">
             <button
               type="submit"
               name="submit"
@@ -113,23 +113,21 @@
               Login
             </button>
           </div>
-          <div class="text-center">
+          <div class="text-center text-[14px]">
             New on our platform?
             <a href="register"><strong>Create an account</strong></a>
           </div>
         </form>
       </div>
-
-  
     </div>
-    <hr class="mt-6">
-    <div class="flex justify-between px-20 pt-1">
-        <h5 class="text-[#34495e]">MetatraderOptions © 2022. All Rights Reserved.</h5>
-        <div class="flex gap-5 text-[#34495e] font-bold">
-            <h5><a href="">Reurn to homepage</a></h5>
-            <h5><a href=""></a>Privacy policy</h5>
+    <hr class="mt-6" />
+    <div class="flex sm:flex-row-reverse flex-col items-center justify-between sm:px-20 px-10 gap-3 pt-1 mb-3">
+        <div class="flex gap-5 text-[#34495e] sm:font-normal font-bold">
+            <h5 class="text-[14px]"><a href="">Return to homepage</a></h5>
+            <h5 class="text-[14px]"><a href=""></a>Privacy policy</h5>
         </div>
+        <h5 class="text-[#34495e] text-[12px] sm:text-[14px] sm:font-normal font-bold">MetatraderOptions © 2022. All Rights Reserved.</h5>
+       
     </div>
-</div>
   </body>
 </html>
